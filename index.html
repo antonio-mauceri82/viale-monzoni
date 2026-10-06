@@ -1,0 +1,120 @@
+<!doctype html>
+<html lang="it">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="theme-color" content="#0f5f9a">
+<title>Viale Monzoni 125</title>
+<style>
+:root{--bg:#eef6fb;--card:#fff;--ink:#17324a;--muted:#6b7f90;--blue:#0f5f9a;--blue2:#dceef9;--green:#198754;--amber:#b7791f;--red:#b42318;--line:#d9e6ef}
+*{box-sizing:border-box}
+body{margin:0;font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Arial,sans-serif;background:linear-gradient(180deg,#eaf5fb 0,#f7fbfd 42%,#fff 100%);color:var(--ink)}
+.wrap{max-width:760px;margin:auto;padding:18px 14px 42px}
+.hero{background:linear-gradient(135deg,#0f5f9a,#2786c2);color:#fff;border-radius:22px;padding:22px;box-shadow:0 12px 30px rgba(15,95,154,.2)}
+.kicker{font-size:12px;letter-spacing:.09em;text-transform:uppercase;opacity:.8}
+h1{font-size:30px;line-height:1.05;margin:7px 0 8px}
+.sub{opacity:.9;font-size:14px}
+.grid{display:grid;grid-template-columns:repeat(3,1fr);gap:10px;margin-top:14px}
+.stat{background:rgba(255,255,255,.14);border:1px solid rgba(255,255,255,.2);border-radius:14px;padding:12px}
+.stat b{display:block;font-size:20px;margin-top:4px}
+.card{background:var(--card);border:1px solid var(--line);border-radius:18px;padding:18px;margin-top:14px;box-shadow:0 6px 18px rgba(31,61,86,.06)}
+.card h2{font-size:18px;margin:0 0 12px}
+.notice{border-left:5px solid var(--amber);background:#fff9ec}
+.ok{border-left:5px solid var(--green);background:#f1fbf5}
+.due{border-left:5px solid var(--red);background:#fff5f4}
+.rate{display:flex;gap:12px;align-items:center;padding:12px 0;border-top:1px solid #edf2f6}
+.rate:first-of-type{border-top:0}
+.badge{min-width:42px;height:42px;border-radius:50%;display:grid;place-items:center;background:#eaf7ef;color:var(--green);font-weight:800}
+.badge.pending{background:#fff0ee;color:var(--red)}
+.rate .main{flex:1}
+.rate .title{font-weight:700}
+.small{font-size:13px;color:var(--muted);line-height:1.45}
+.amount{font-weight:800;white-space:nowrap}
+.pill{display:inline-block;padding:5px 9px;border-radius:999px;background:var(--blue2);color:var(--blue);font-size:12px;font-weight:700;margin:2px 5px 2px 0}
+hr{border:0;border-top:1px solid var(--line);margin:16px 0}
+.footer{text-align:center;color:var(--muted);font-size:12px;margin-top:22px}
+@media(max-width:540px){.grid{grid-template-columns:1fr}.stat{display:flex;justify-content:space-between;align-items:center}.stat b{margin:0}.hero{padding:19px}.wrap{padding:12px 10px 32px}}
+</style>
+</head>
+<body>
+<main class="wrap">
+
+<section class="hero">
+  <div class="kicker">Registro personale</div>
+  <h1>Viale Monzoni 125</h1>
+  <div class="sub">Abitazione principale · Marina di Carrara</div>
+  <div class="grid">
+    <div class="stat"><span>Dovuto 2026</span><b>1.809,37 €</b></div>
+    <div class="stat"><span>Versato</span><b>1.436,37 €</b></div>
+    <div class="stat"><span>Residuo</span><b>373,00 €</b></div>
+  </div>
+</section>
+
+<section class="card due">
+  <h2>Prossima scadenza</h2>
+  <div class="pill">4ª rata 2026</div>
+  <div class="pill">10 ottobre 2026</div>
+  <p><strong>Da versare: 373,00 €</strong></p>
+  <div class="small">È l’unica rata ordinaria 2026 ancora da pagare sulla base del prospetto corretto inviato dall’amministratore.</div>
+</section>
+
+<section class="card">
+  <h2>Rate gestione ordinaria 2026</h2>
+  <div class="rate">
+    <div class="badge">✓</div>
+    <div class="main"><div class="title">1ª rata · 20 gennaio 2026</div><div class="small">Comprende il saldo precedente accorpato alla prima rata.</div></div>
+    <div class="amount">690,37 €</div>
+  </div>
+  <div class="rate">
+    <div class="badge">✓</div>
+    <div class="main"><div class="title">2ª rata · 10 aprile 2026</div><div class="small">Quota ordinaria trimestrale.</div></div>
+    <div class="amount">373,00 €</div>
+  </div>
+  <div class="rate">
+    <div class="badge">✓</div>
+    <div class="main"><div class="title">3ª rata · 10 luglio 2026</div><div class="small">Quota ordinaria trimestrale.</div></div>
+    <div class="amount">373,00 €</div>
+  </div>
+  <div class="rate">
+    <div class="badge pending">!</div>
+    <div class="main"><div class="title">4ª rata · 10 ottobre 2026</div><div class="small">Ancora da versare.</div></div>
+    <div class="amount">373,00 €</div>
+  </div>
+</section>
+
+<section class="card ok">
+  <h2>Versamenti 2026 registrati</h2>
+  <p><strong>12 gennaio 2026</strong><br><span class="small">Versamento registrato.</span></p>
+  <div class="amount">331,00 €</div>
+  <hr>
+  <p><strong>30 luglio 2026</strong><br><span class="small">Versamento registrato.</span></p>
+  <div class="amount">1.105,37 €</div>
+  <hr>
+  <div><strong>Totale versato 2026: 1.436,37 €</strong></div>
+</section>
+
+<section class="card notice">
+  <h2>Ultimo aggiornamento amministratore</h2>
+  <p><strong>29 luglio 2026</strong></p>
+  <div class="small">Giuliano Orlandi ha inviato i documenti corretti relativi a consumi acqua 2025, riparto consuntivo 2025, riparto preventivo 2026 e rate 2026, sostituendo i prospetti precedenti contenenti un errore nel calcolo del consumo dell’acqua.</div>
+</section>
+
+<section class="card">
+  <h2>Storico pagamenti</h2>
+  <div class="rate"><div class="badge">✓</div><div class="main"><div class="title">10 ottobre 2024</div></div><div class="amount">310,00 €</div></div>
+  <div class="rate"><div class="badge">✓</div><div class="main"><div class="title">3 gennaio 2025</div></div><div class="amount">310,00 €</div></div>
+  <div class="rate"><div class="badge">✓</div><div class="main"><div class="title">10 aprile 2025</div></div><div class="amount">331,00 €</div></div>
+  <div class="rate"><div class="badge">✓</div><div class="main"><div class="title">10 luglio 2025</div></div><div class="amount">331,00 €</div></div>
+  <div class="rate"><div class="badge">✓</div><div class="main"><div class="title">12 gennaio 2026</div></div><div class="amount">331,00 €</div></div>
+  <div class="rate"><div class="badge">✓</div><div class="main"><div class="title">30 luglio 2026</div></div><div class="amount">1.105,37 €</div></div>
+</section>
+
+<section class="card">
+  <h2>Riferimenti</h2>
+  <div class="small">Amministratore: Giuliano Orlandi · Condominio Viale Monzoni 125 · Registro separato dal Box Auto di Via Bassa 122.</div>
+</section>
+
+<div class="footer">Dati verificati e aggiornati al 6 ottobre 2026</div>
+</main>
+</body>
+</html>
